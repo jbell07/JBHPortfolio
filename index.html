@@ -11,7 +11,7 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #fdf6e3; /* Light tan background */
+      background-color: #fdf6e3;
       color: #222222;
       font-family: 'Inter', sans-serif;
       display: flex;
@@ -48,17 +48,19 @@
 
     .experience {
       margin-top: 2rem;
-      max-width: 700px;
+      max-width: 800px;
       text-align: left;
     }
 
     .experience h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.5rem;
     }
 
     .experience-item {
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
     }
 
     .experience-item h3 {
@@ -66,8 +68,13 @@
       margin-bottom: 0.25rem;
     }
 
-    .experience-item p {
-      margin: 0;
+    .experience-item ul {
+      margin-top: 0.5rem;
+      padding-left: 1.5rem;
+    }
+
+    .experience-item ul li {
+      margin-bottom: 0.4rem;
       font-size: 1rem;
       color: #333333;
     }
@@ -101,21 +108,43 @@
   </div>
 
   <div class="experience">
-    <h2>Experience</h2>
+    <h2>Professional Experience</h2>
 
     <div class="experience-item">
-      <h3>Software Engineering Intern – [Your Company]</h3>
-      <p>Developed internal tools using Python and JavaScript to automate workflows and improve team productivity. Collaborated on a full-stack application using React and REST APIs.</p>
+      <h3>Software Engineer Intern | Jacksonville Electric Authority, Jacksonville, FL <span style="float:right; font-weight:normal;">August 2024 – Present</span></h3>
+      <ul>
+        <li>Designed and implemented frontend interfaces using HTML, CSS, and JavaScript to support internal user workflows.</li>
+        <li>Developed enterprise-grade features using C# and ASP.NET Core with robust REST API integrations and backend service layers.</li>
+        <li>Supported property address validation processes and assisted in integration of GIS map layers into internal systems.</li>
+        <li>Participated in UI/UX feedback loops with stakeholders to improve usability and interface accessibility.</li>
+        <li>Implemented real-time notification services and backend database triggers to support operational readiness.</li>
+        <li>Collaborated in Agile team environments—participating in scrums, sprint reviews, and code reviews.</li>
+        <li>Enhanced system responsiveness and scalability using SQL-based triggers and Entity Framework.</li>
+        <li>Built and optimized CI/CD pipelines using GitHub Actions and Azure DevOps, reducing manual deployment time by 70%.</li>
+        <li>Integrated RESTful APIs and optimized service endpoints for reliability and performance using Entity Framework.</li>
+        <li>Enhanced system diagnostics with custom loggers and performance monitoring tools.</li>
+      </ul>
     </div>
 
     <div class="experience-item">
-      <h3>Computer Science Student – [Your University]</h3>
-      <p>Completed coursework in data structures, algorithms, machine learning, and software engineering. Built hands-on projects involving Java, Python, and web development frameworks.</p>
+      <h3>Database Administrator Intern | Jacksonville Electric Authority, Jacksonville, FL <span style="float:right; font-weight:normal;">March 2024 – August 2024</span></h3>
+      <ul>
+        <li>Implemented Python and Bash scripts for database maintenance automation, reducing manual overhead by 50%.</li>
+        <li>Maintained SQL Server environments by applying updates and performance patches.</li>
+        <li>Developed Python scripts to automate data quality assessments, ensuring accurate reporting.</li>
+        <li>Developed internal tools using HTML/CSS, improving UI usability and team efficiency.</li>
+        <li>Advanced technical proficiency in Linux, SQL, Oracle SQL, and Bash scripting through hands-on implementation.</li>
+      </ul>
     </div>
 
     <div class="experience-item">
-      <h3>Veteran – United States Armed Forces</h3>
-      <p>Led cross-functional teams, developed logistical strategies, and applied discipline and leadership in high-stakes environments. Transferring that drive and attention to detail into tech.</p>
+      <h3>Hospital Corpsman | U.S. Navy <span style="float:right; font-weight:normal;">October 2016 – August 2021</span></h3>
+      <ul>
+        <li>Deployed to Kuwait and Jordan (May 2019 – November 2019).</li>
+        <li>Trained and supervised 12+ junior corpsmen.</li>
+        <li>Led field operations, executing critical medical processes under pressure while cultivating invaluable leadership skills.</li>
+        <li>Maintained high operational standards and adaptability in diverse and challenging environments.</li>
+      </ul>
     </div>
   </div>
 </body>
