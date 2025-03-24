@@ -16,22 +16,46 @@
       font-family: 'Inter', sans-serif;
       display: flex;
       flex-direction: column;
-      justify-content: center;
-      align-items: center;
       min-height: 100vh;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #f0e6d2;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .resume-button {
+      padding: 0.5rem 1rem;
+      background-color: #0077cc;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .resume-button:hover {
+      background-color: #005fa3;
+      transform: scale(1.05);
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       text-align: center;
       padding: 2rem;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      font-size: 1.25rem;
-      margin-bottom: 1.5rem;
-      color: #444444;
     }
 
     .links a {
@@ -46,106 +70,142 @@
       color: #000000;
     }
 
-    .experience {
+    .experience, .projects {
       margin-top: 2rem;
       max-width: 800px;
       text-align: left;
     }
 
-    .experience h2 {
+    .experience h2, .projects h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
       border-bottom: 2px solid #ccc;
       padding-bottom: 0.5rem;
     }
 
-    .experience-item {
+    .experience-item, .project-item {
       margin-bottom: 2rem;
     }
 
-    .experience-item h3 {
+    .experience-item h3, .project-item h3 {
       font-size: 1.25rem;
       margin-bottom: 0.25rem;
     }
 
-    .experience-item ul {
+    .experience-item ul, .project-item ul {
       margin-top: 0.5rem;
       padding-left: 1.5rem;
     }
 
-    .experience-item ul li {
+    .experience-item ul li, .project-item ul li {
       margin-bottom: 0.4rem;
       font-size: 1rem;
       color: #333333;
     }
 
+    footer {
+      background-color: #f0e6d2;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
     @media (max-width: 600px) {
-      h1 {
-        font-size: 2.2rem;
+      header {
+        flex-direction: column;
+        align-items: flex-start;
       }
-      p {
-        font-size: 1rem;
-      }
-      .links a {
-        font-size: 0.9rem;
-        display: block;
-        margin: 0.5rem 0;
-      }
-      .experience {
-        text-align: center;
+      .resume-button {
+        margin-top: 1rem;
       }
     }
   </style>
 </head>
 <body>
-  <h1>John Bell-Higgins</h1>
-  <p>Software Engineer | Developer | Problem Solver | Big Dawg</p>
-  <div class="links">
-    <a href="https://github.com/jbell07" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/john-bell-higgins/" target="_blank">LinkedIn</a>
-    <a href="mailto:jabellhiggins@gmail.com">Email</a>
-    <a href="John-Bell-Higgins_Resume.pdf" target="_blank">Resume</a>
+  <header>
+    <h1>John Bell-Higgins</h1>
+    <a class="resume-button" href="John-Bell-Higgins_Resume.pdf" target="_blank">Download Resume</a>
+  </header>
+
+  <div class="main-content">
+    <p>Software Engineer | Developer | Problem Solver | Big Dawg</p>
+    <div class="links">
+      <a href="https://github.com/jbell07" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/john-bell-higgins/" target="_blank">LinkedIn</a>
+      <a href="mailto:jabellhiggins@gmail.com">Email</a>
+    </div>
+
+    <div class="experience">
+      <h2>Professional Experience</h2>
+      <div class="experience-item">
+        <h3>Software Engineer Intern | Jacksonville Electric Authority, Jacksonville, FL <span style="float:right; font-weight:normal;">August 2024 – Present</span></h3>
+        <ul>
+          <li>Designed and implemented frontend interfaces using HTML, CSS, and JavaScript to support internal user workflows.</li>
+          <li>Developed enterprise-grade features using C# and ASP.NET Core with robust REST API integrations and backend service layers.</li>
+          <li>Supported property address validation processes and assisted in integration of GIS map layers into internal systems.</li>
+          <li>Participated in UI/UX feedback loops with stakeholders to improve usability and interface accessibility.</li>
+          <li>Implemented real-time notification services and backend database triggers to support operational readiness.</li>
+          <li>Collaborated in Agile team environments—participating in scrums, sprint reviews, and code reviews.</li>
+          <li>Enhanced system responsiveness and scalability using SQL-based triggers and Entity Framework.</li>
+          <li>Built and optimized CI/CD pipelines using GitHub Actions and Azure DevOps, reducing manual deployment time by 70%.</li>
+          <li>Integrated RESTful APIs and optimized service endpoints for reliability and performance using Entity Framework.</li>
+          <li>Enhanced system diagnostics with custom loggers and performance monitoring tools.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Database Administrator Intern | Jacksonville Electric Authority, Jacksonville, FL <span style="float:right; font-weight:normal;">March 2024 – August 2024</span></h3>
+        <ul>
+          <li>Implemented Python and Bash scripts for database maintenance automation, reducing manual overhead by 50%.</li>
+          <li>Maintained SQL Server environments by applying updates and performance patches.</li>
+          <li>Developed Python scripts to automate data quality assessments, ensuring accurate reporting.</li>
+          <li>Developed internal tools using HTML/CSS, improving UI usability and team efficiency.</li>
+          <li>Advanced technical proficiency in Linux, SQL, Oracle SQL, and Bash scripting through hands-on implementation.</li>
+        </ul>
+      </div>
+
+      <div class="experience-item">
+        <h3>Hospital Corpsman | U.S. Navy <span style="float:right; font-weight:normal;">October 2016 – August 2021</span></h3>
+        <ul>
+          <li>Deployed to Kuwait and Jordan (May 2019 – November 2019).</li>
+          <li>Trained and supervised 12+ junior corpsmen.</li>
+          <li>Led field operations, executing critical medical processes under pressure while cultivating invaluable leadership skills.</li>
+          <li>Maintained high operational standards and adaptability in diverse and challenging environments.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="projects">
+      <h2>Projects</h2>
+      <div class="project-item">
+        <h3>Portfolio Website</h3>
+        <ul>
+          <li>Fully coded personal website using HTML, CSS, and GitHub Pages.</li>
+          <li>Responsive design and optimized accessibility for recruiters and hiring managers.</li>
+        </ul>
+      </div>
+
+      <div class="project-item">
+        <h3>Weather App</h3>
+        <ul>
+          <li>Java-based desktop application using weather APIs and Java Swing for real-time weather data.</li>
+          <li>Integrated autocomplete city search and responsive UI.</li>
+        </ul>
+      </div>
+
+      <div class="project-item">
+        <h3>Autonomous Robotics Project</h3>
+        <ul>
+          <li>Led design of an autonomous robot using ESP32 sensors, Jetson board, and camera vision processing.</li>
+          <li>Implemented navigation algorithms and real-time data fusion from multiple sensors.</li>
+        </ul>
+      </div>
+    </div>
   </div>
 
-  <div class="experience">
-    <h2>Professional Experience</h2>
-
-    <div class="experience-item">
-      <h3>Software Engineer Intern | Jacksonville Electric Authority, Jacksonville, FL <span style="float:right; font-weight:normal;">August 2024 – Present</span></h3>
-      <ul>
-        <li>Designed and implemented frontend interfaces using HTML, CSS, and JavaScript to support internal user workflows.</li>
-        <li>Developed enterprise-grade features using C# and ASP.NET Core with robust REST API integrations and backend service layers.</li>
-        <li>Supported property address validation processes and assisted in integration of GIS map layers into internal systems.</li>
-        <li>Participated in UI/UX feedback loops with stakeholders to improve usability and interface accessibility.</li>
-        <li>Implemented real-time notification services and backend database triggers to support operational readiness.</li>
-        <li>Collaborated in Agile team environments—participating in scrums, sprint reviews, and code reviews.</li>
-        <li>Enhanced system responsiveness and scalability using SQL-based triggers and Entity Framework.</li>
-        <li>Built and optimized CI/CD pipelines using GitHub Actions and Azure DevOps, reducing manual deployment time by 70%.</li>
-        <li>Integrated RESTful APIs and optimized service endpoints for reliability and performance using Entity Framework.</li>
-        <li>Enhanced system diagnostics with custom loggers and performance monitoring tools.</li>
-      </ul>
-    </div>
-
-    <div class="experience-item">
-      <h3>Database Administrator Intern | Jacksonville Electric Authority, Jacksonville, FL <span style="float:right; font-weight:normal;">March 2024 – August 2024</span></h3>
-      <ul>
-        <li>Implemented Python and Bash scripts for database maintenance automation, reducing manual overhead by 50%.</li>
-        <li>Maintained SQL Server environments by applying updates and performance patches.</li>
-        <li>Developed Python scripts to automate data quality assessments, ensuring accurate reporting.</li>
-        <li>Developed internal tools using HTML/CSS, improving UI usability and team efficiency.</li>
-        <li>Advanced technical proficiency in Linux, SQL, Oracle SQL, and Bash scripting through hands-on implementation.</li>
-      </ul>
-    </div>
-
-    <div class="experience-item">
-      <h3>Hospital Corpsman | U.S. Navy <span style="float:right; font-weight:normal;">October 2016 – August 2021</span></h3>
-      <ul>
-        <li>Deployed to Kuwait and Jordan (May 2019 – November 2019).</li>
-        <li>Trained and supervised 12+ junior corpsmen.</li>
-        <li>Led field operations, executing critical medical processes under pressure while cultivating invaluable leadership skills.</li>
-        <li>Maintained high operational standards and adaptability in diverse and challenging environments.</li>
-      </ul>
-    </div>
-  </div>
+  <footer>
+    Contact: jabellhiggins@gmail.com | © 2025 John Bell-Higgins. All rights reserved.
+  </footer>
 </body>
 </html>
