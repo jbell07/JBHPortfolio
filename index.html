@@ -11,15 +11,16 @@
     body {
       margin: 0;
       padding: 0;
-      background-color: #0f0f0f;
-      color: #ffffff;
+      background-color: #fdf6e3; /* Light tan background */
+      color: #222222;
       font-family: 'Inter', sans-serif;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
+      padding: 2rem;
     }
 
     h1 {
@@ -29,12 +30,12 @@
 
     p {
       font-size: 1.25rem;
-      margin-bottom: 2rem;
-      color: #cccccc;
+      margin-bottom: 1.5rem;
+      color: #444444;
     }
 
     .links a {
-      color: #00bfff;
+      color: #0077cc;
       text-decoration: none;
       font-size: 1rem;
       margin: 0 1rem;
@@ -42,7 +43,33 @@
     }
 
     .links a:hover {
-      color: #ffffff;
+      color: #000000;
+    }
+
+    .experience {
+      margin-top: 2rem;
+      max-width: 700px;
+      text-align: left;
+    }
+
+    .experience h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .experience-item {
+      margin-bottom: 1.5rem;
+    }
+
+    .experience-item h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .experience-item p {
+      margin: 0;
+      font-size: 1rem;
+      color: #333333;
     }
 
     @media (max-width: 600px) {
@@ -57,6 +84,9 @@
         display: block;
         margin: 0.5rem 0;
       }
+      .experience {
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -68,6 +98,25 @@
     <a href="https://www.linkedin.com/in/john-bell-higgins/" target="_blank">LinkedIn</a>
     <a href="mailto:jabellhiggins@gmail.com">Email</a>
     <a href="John-Bell-Higgins_Resume.pdf" target="_blank">Resume</a>
+  </div>
+
+  <div class="experience">
+    <h2>Experience</h2>
+
+    <div class="experience-item">
+      <h3>Software Engineering Intern – [Your Company]</h3>
+      <p>Developed internal tools using Python and JavaScript to automate workflows and improve team productivity. Collaborated on a full-stack application using React and REST APIs.</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Computer Science Student – [Your University]</h3>
+      <p>Completed coursework in data structures, algorithms, machine learning, and software engineering. Built hands-on projects involving Java, Python, and web development frameworks.</p>
+    </div>
+
+    <div class="experience-item">
+      <h3>Veteran – United States Armed Forces</h3>
+      <p>Led cross-functional teams, developed logistical strategies, and applied discipline and leadership in high-stakes environments. Transferring that drive and attention to detail into tech.</p>
+    </div>
   </div>
 </body>
 </html>
